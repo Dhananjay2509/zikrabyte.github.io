@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@200;300;400;600&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+  background-color: rgba(177, 174, 174, 0.215);
+  
+}
+
+.header h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  position: relative;
+  top: 12px;
+  padding-left: 20px;
+}
+
+.child1 h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.parent{
+  display: flex;
+}
+
+.child1{
+  width: 20%;
+  /* background-color: red; */
+  /* border: 2px solid red; */
+ 
+}
+
+.child1 h3{
+  padding-top: 20px;
+}
+
+li{
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+
+h3,li{
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+
+.child2{
+  width: 80%;
+}
+
+
+
+
+/* --------------------------------------------------------BASIC INFO-------------------------------------- */
+
+#info{
+  width: 960px;
+  background-color: white;
+  border-radius: 5px ;
+}
+
+.infoheader{
+  margin-left: 330px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.infoheader h2{
+  color: rgba(0, 110, 255, 0.89);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.infoheader span{
+  color: rgba(0, 110, 255, 0.808);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  right: 20px;
+}
+
+.infohead h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  position: relative;
+  left: 60px;
+}
+
+
+.infobox{
+  display: grid;
+  grid-template-columns: repeat(2,500px);
+  grid-gap: 35px;
+  padding-left: 60px;
+  padding-top: 20px;
+  border-radius: 5px;
+  
+}
+
+label{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.727);
+  
+}
+
+select,input,.pricebox{
+  width: 300px;
+  height: 35px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.448);
+}
+
+
+
+
+/* -------------------------------------------PRICING----------------------------------------- */
+.pricebox{
+  text-align: left;
+}
+
+
+.pricebox{
+  width: 165px;
+  border: 0.5px solid black;
+}
+
+.pricebox span{
+  position: absolute;
+  
+}
+
+.addcatogories{
+  margin-bottom: 20px;
+  
+}
+
+.addcatogories label{
+  color: rgba(30, 113, 255, 0.91);
+}
+
+.addcatogories label:hover{
+  cursor: pointer;
+}
+
+.footer{
+  background-color: white;
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+.save button{
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgba(30, 113, 255, 0.91);
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.save button:hover{
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------IMAGES & VIDEOS---------------------------------------- */
+
+.images{
+  background-color: white;
+  width: 960px;
+  margin-top: 50px;
+  border-radius: 5px;
+ }
+
+.imagesheader{
+  padding-top: 30px;
+}
+
+.images h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+}
+
+.images p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.727);
+}
+
+.imagesheader h2{
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.727);
+}
+.imagesbox span{
+  margin-left: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.727);
+}
+
+.imagesbox button{
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: blue;
+  border-color: blue;
+  margin-left: 30px;
+}
+
+.imagesheader,.imagesinput{
+  margin-left: 60px;
+}
+
+.imagesinput{
+  margin-top:25px ;
+}
+
+.imginput {
+  width: 850px;
+  height: 200px;
+  border: 1px dashed rgba(0, 0, 0, 0.284);
+  border-radius: 5px;
+}
+
+.imginput input{
+  margin-top: 90px;
+  margin-left: 350px;
+}
+
+.vidinput{
+  display: flex;
+  
+}
+
+.vidinput2{
+  margin-left: 50px;
+}
+
+.vidinput1,.vidinput2{
+  width: 200px;
+  height: 150px;
+  border: 1px dashed rgba(0, 0, 0, 0.284);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+/* -------------------------------------------------------PRODUCT IDENTIFIERS-------------------------------- */
+
+#identifiers{
+  background-color: white;
+  width: 960px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.identifiersinfo{
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+
+.identifiersinfo1{
+  display: grid;
+  grid-template-columns: repeat(2,500px);
+  grid-gap: 35px;
+}
+
+
+
+/* -----------------------------------------------------DESCRIPTION---------------------------------------- */
+
+.descriptionbox{
+  width: 960px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.descriptionheader h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  margin-left: 60px;
+}
+
+/* .descriptionbox{
+  width: 980px;
+  height: 370px;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.448);
+  margin-top: 30px;
+  margin-left: 60px;
+} */
+
+/* .descriptionbox ul{
+  display: flex;
+} */
+
+
+ .descriptioncontainer{
+  width: 850px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.284);
+  border-radius: 5px;
+  margin-left: 60px;
+  margin-top: 40px;
+ }
+
+/* ------------------------------------------PRICING------------------------------------------------ */
+ .pricingbox{
+  background-color: white;
+  width: 960px;
+  margin-top: 50px;
+  border-radius: 5px;
+ }
+
+ .Defaultprice{
+  margin-top: 40px;
+ }
+
+ .Defaultprice,.pricingrow{
+  margin-left: 60px;
+ }
+
+ .pricingrow{
+  display: grid;
+  grid-template-columns: repeat(2,500px);
+  grid-gap: 35px;
+  margin-top: 10px;
+ }
+
+ .pricingheader h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  margin-left: 60px;
+}
+
+.pricingfooter{
+  margin-left: 60px;
+  margin-top: 20px;
+  color: blue;
+}
+
+.pricingfooter:hover{
+  cursor: pointer;
+}
+
+/* ------------------------------------------INVENTORY------------------------------------------- */
+
+.inventory{
+  width: 960px;
+  height: 200px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.inventoryheader h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  margin-left: 60px;
+}
+
+.inventoryinfo input{
+  margin-top: 40px;
+  position: relative;
+  right: 75px;
+  height: 20px;
+}
+
+.inventoryinfo span{
+  position: relative;
+  right: 210px;
+  bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+
+/* --------------------------------------------VARIATIONS------------------------------------------ */
+
+.variationbox{
+  width: 960px;
+  background-color: white;
+  border-radius: 5px ;
+}
+
+.variationheader{
+  margin-left: 330px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.variationheader h2{
+  color: rgba(0, 110, 255, 0.89);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.variationheader span{
+  color: rgba(0, 110, 255, 0.808);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  right: 90px;
+}
+
+.variationhead h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  position: relative;
+  left: 60px;
+}
+
+.variantoptions h2,.variants h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  position: relative;
+  left: 60px;
+}
+
+.variantoptions p{
+  text-align: center;
+}
+
+.variantoptions button {
+  position: relative;
+  left: 402px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: blue;
+  border-color: blue;
+}
+
+.variants input{
+  width: 500px;
+  margin-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 300px;
+}
+
+.variationparagraph{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.727);
+  position: relative;
+  left: 60px;
+}
+
+
+/* --------------------------------------------DIMENSION & WEIGHT------------------------------------------ */
+
+.dimensionbox{
+  width: 960px;
+  background-color: white;
+  border-radius: 5px ;
+}
+
+.dimensionheader{
+  margin-left: 330px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.dimensionheader h2{
+  color: rgba(0, 110, 255, 0.89);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.dimensionheader span{
+  color: rgba(0, 110, 255, 0.808);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  right: 150px;
+}
+.dimensionhead h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  position: relative;
+  left: 60px;
+}
+
+.dimensionparagraph{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.727);
+  position: relative;
+  left: 60px;
+}
+
+.dimensioninfo{
+  display: grid;
+  grid-template-columns: repeat(2,500px);
+  grid-gap: 35px;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+
+/* ------------------------------------------------------SHIPPING DETAILS------------------------------------ */
+.shippingdetails{
+  width: 960px;
+  height: 200px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.shippinginfo{
+ margin-left: 60px;
+ margin-top: 40px;
+}
+
+.shippingheader h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  margin-left: 60px;
+}
+
+.freeshipping{
+  margin-left: 180px;
+  position: relative;
+  bottom: 45px;
+}
+
+.freeshipping span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  position: relative;
+  right: 125px;
+  bottom: 10px;
+}
+
+/* ----------------------------------------SEO ------------------------------------ */
+
+#seobox{
+  width: 960px;
+  background-color: white;
+  border-radius: 5px ;
+}
+
+.seoheader{
+  margin-left: 330px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.seoheader h2{
+  color: rgba(0, 110, 255, 0.89);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.seoheader span{
+  color: rgba(0, 110, 255, 0.808);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  right: 60px;
+}
+
+.seohead h2{
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.727);
+  position: relative;
+  left: 60px;
+}
+
+.seoinfo{
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.seoinfo1{
+  display: grid;
+  grid-template-columns: repeat(2,430px);
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+
+.seourl button{
+  background-color: white;
+  width: 80px;
+  height: 39px;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.448);
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.seometa{
+  margin-top: 20px;
+}
+
+
+/* ---------------------------------------OPEN GRAPH SHARING------------------------------------------ */
+
+
+#ogs{
+  width: 960px;
+  background-color: white;
+  border-radius: 5px ;
+  margin-top: 50px;
+}
+
+.ogshead h2{
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.727);
+    position: relative;
+    left: 60px;
+}
+
+.ogsinfo{
+  margin-top: 40px;
+ margin-left: 60px;
+}
+
+.ogstitle input{
+  height: 20px;
+  position: relative;
+  right: 140px;
+}
+
+.ogstitle span{
+  position: relative;
+  right: 270px;
+  bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.ogsdescription input {
+  height: 20px;
+  position: relative; 
+  right: 140px;
+}
+
+.ogsdescription span{
+  position: relative;
+  right: 270px;
+  bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.ogsimage input{
+  height: 20px;
+  position: relative; 
+  right: 140px;
+}
+
+.ogsimage span{
+  position: relative;
+  right: 270px;
+  bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------FOOTER--------------------------------------------------------- */
+.footer .save,.cancel{
+  padding-left: 30px;
+  padding-right: 20px;
+}

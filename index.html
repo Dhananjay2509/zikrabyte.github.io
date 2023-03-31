@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1> Add Product </h1> <br>
+    </div>
+    <hr />
+
+    <!-- -------------------------------------------------COLUMN1------------------------------------------- -->
+    <div class="parent">
+        <div class="child1">
+            <h3>PRODUCT INFORMATION</h3> <br>
+            <ul>
+                <li id="binfo">Basic Information </li> <br />
+                <li id="descriptionid">Description </li> <br />
+                <li id="imageid">Images & Videos </li> <br />
+                <li id="identifiersid">Product Identifiers </li> <br />
+                <li id="pricingboxid">Pricing </li> <br />
+                <li id="inventory">Inventory </li> <br>
+            </ul>
+
+            <h3>PRODUCT OPTIONS</h3> <br>
+            <ul>
+                <li id="variationid">Variations</li> <br>
+            </ul>
+
+
+            <h3>FULFILLMENT</h3> <br>
+            <ul>
+                <li id="dimensionid">Dimensions & Weight </li> <br />
+                <li id="shippingid">Shipping Details</li> <br>
+            </ul>
+
+
+            <h3>SEO & SHARING</h3> <br>
+            <ul>
+                <li id="seoid">SEO</li> <br />
+                <li id="graphid">Open Graph Sharing</li> <br>
+            </ul>
+
+        </div>
+
+
+
+        <!-- ---------------------------------------COLUMN2------------------------------------------- -->
+        <div class="child2" id="child2">
+
+            <!-- --------------------------------BASIC INFO------------------------------------------------>
+            <div class="basicinfo" id="basicinfo">
+                <div class="infoheader">
+                    <h2> Product Information</h2>
+                    <span>Information to help define a product</span>
+                </div>
+
+                <div id="info">
+
+                    <div class="infohead">
+                        <h2>Basic Information</h2>
+                    </div>
+
+                    <div class="infobox">
+
+                        <div class="infotype1">
+                            <label>Type</label> <br>
+                            <select name="info" id="typeinfo">
+                                <option value="type1">product/ service/ solution</option>
+                                <option value="type2"> product1/ service1/ solution1</option>
+                            </select>
+                        </div>
+
+                        <div class="code">
+                            <label> Code</label> <br>
+                            <input type="text" placeholder="Enter Code (Alfa- numeric)">
+                        </div>
+
+                        <div class="selectcategory">
+                            <label>Select Catogory</label> <br>
+                            <select name="category" id="select">
+                                <option value="catogory1">Select</option>
+                                <option value="catogory2"> Select</option>
+                            </select>
+                        </div>
+
+                        <div class="selectsubcategory">
+                            <label>Select Sub Catogory</label> <br>
+                            <select name="subcategory" id="selectsub">
+                                <option value="subcatogory1">Select</option>
+                                <option value="subcatogory2"> Select</option>
+                            </select>
+                        </div>
+
+                        <div class="selectthirdsubcategory">
+                            <label>Select 3rd Sub Catogory</label> <br>
+                            <select name="subcategory3" id="selectsub3">
+                                <option value="subcatogory3">Select</option>
+                                <option value="subcatogory3"> Select</option>
+                            </select>
+                        </div>
+
+                        <div class="productname">
+                            <label> Select Product Name <span>*</span> </label> <br>
+                            <input type="text" placeholder="Sample Product Name">
+                        </div>
+
+                        <div class="SKU">
+                            <label> SKU </label> <br>
+                            <input type="text" placeholder="THK- 1138">
+                        </div>
+
+                        <div class="DefaultPrice">
+                            <label>Default Price* (excluding tax) </label> <br>
+                            <input type="text" placeholder="$50">
+                        </div>
+
+                        <div class="offerprice">
+                            <label> Offer Price</label> <br>
+                            <input type="text" placeholder="$$">
+                        </div>
+
+                        <div class="Weight">
+                            <label>Weight </label> <br>
+                            <input type="text" placeholder="000 kg">
+                        </div>
+
+                        <div class="productvariations">
+                            <label>Are there Product variations</label> <br>
+                            <select name="variations" id="variationsid">
+                                <option value="variationsvalue">Select </option>
+                                <option value="variationsvalue"> Yes</option>
+                                <option value="variationsvalue"> No</option>
+                            </select>
+                        </div>
+
+                        <div class="productline">
+                            <label>Product line:</label> <br>
+                            <select name="productline" id="productlineid">
+                                <option value="product">Select </option>
+                                <option value="product"> Product1</option>
+                            </select>
+                        </div>
+
+                        <div class="catogories">
+                            <label>Catogoroies</label>
+
+                        </div>
+
+                        <div class="addcatogories">
+                            <label>+Add Catogories</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----------------------------------DESCRIPTION-------------------------------------------- -->
+            <div class="descriptionbox" id="descriptionbox">
+                <div class="descriptionheader">
+                    <h2>Description</h2>
+                </div>
+
+                <div class="descriptioncontainer">
+
+                </div>
+                <br><br>
+            </div>
+
+            <!-- -------------------------------------------------IMAGES & VIDEOS------------------------------------------ -->
+
+            <div class="images" id="videos">
+                <div class="imagesbox" id="imagesbox">
+                    <div class="imagesheader">
+                        <h2> Images & Videos </h2> <br>
+                    </div>
+
+                    <span>Add images and videos of your product to engage customers.</span>
+
+                    <button>+Add from Url</button>
+                    <button>Upload Images</button>
+
+                    <br>
+                    <div class="imagesinput">
+                        <h2>Images</h2> <br>
+                        <p>Image size should not be less than 50kb.</p> <br>
+                        <div class="imginput">
+                            <input type="file">
+                        </div>
+                        <br>
+                        <div class="videoinput">
+                            <div class="videohead">
+                                <h2>Videos </h2> <br>
+                            </div>
+                            <p>Video size should not be less than 100kb</p> <br>
+                            <div class="vidinput">
+                                <div class="vidinput1">
+                                    <input type="file">
+                                </div>
+                                <div class="vidinput2">
+                                    <input type="file">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+
+
+            <!-- ------------------------------------------PRODUCT IDENTIFIERS------------------------------------- -->
+
+            <div class="productidentifiers" id="identifiers">
+
+                <div class="seobox" id="seobox">
+                    <div class="seohead">
+                        <h2> Product Identifiers </h2>
+                    </div>
+
+                    <div class="identifiersinfo">
+                        <div class="identifiersinfo1">
+                            <div class="identifierslabel">
+                                <label> Labels</label> <br>
+                                <select name="productline" id="productlineid">
+                                    <option value="product">In-stock </option>
+                                    <option value="product">Out of stock </option>
+
+                                </select>
+                            </div>
+                            <div class="identifiersurl">
+                                <label> Tags</label> <br>
+                                <select name="productline" id="productlineid">
+                                    <option value="product">Reclyner </option>
+                                    <option value="product">Auto </option>
+                                    <option value="product">Manual </option>
+                                    <option value="product">Semi-Auto </option>
+                                    <option value="product">None </option>
+                                </select>
+                                <select name="productline" id="productlineid">
+                                    <option value="product">Pattern </option>
+                                    <option value="product">Pattern1 </option>
+                                    <option value="product">Pattern2 </option>
+                                    <option value="product">Pattern2 </option>
+                                </select>
+                                <select name="productline" id="productlineid">
+                                    <option value="product">Shape </option>
+                                    <option value="product">Sqaure </option>
+                                    <option value="product">Rectangle </option>
+                                    <option value="product">Oval</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <br> <br>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- --------------------------------PRICING BOX----------------------------------------- -->
+            <div class="pricingbox" id="pricingbox">
+                <div class="pricingheader">
+                    <h2>Pricing</h2>
+                </div>
+                <div class="Defaultprice">
+                    <label>Default Price* (excluding tax) </label> <br>
+                    <input type="text" placeholder="$0">
+                </div>
+                <div class="pricingrow">
+                    <div class="tax">
+                        <label>Tax Class</label> <br>
+                        <select name="productline" id="productlineid">
+                            <option value="product">Tax in % </option>
+                            <option value="product"> Out Of stock</option>
+                        </select>
+                    </div>
+                    <div class="taxcodes">
+                        <label> Tax Provider Tax Code</label> <br>
+                        <input type="text" placeholder="Code">
+                    </div>
+                </div>
+                <div class="pricingfooter">> Show Advanced Pricing</div>
+                <br><br>
+            </div>
+
+
+
+
+            <!-- ------------------------------------INVENTORY---------------------------------------------->
+            <div class="inventory" id="inventoryid">
+                <div class="inventoryheader">
+                    <h2>Inventory</h2>
+                </div>
+
+                <div class="inventoryinfo">
+                    <input type="checkbox"> <span>Track Inventory (As per ZIP Code) </span>
+                </div>
+            </div>
+
+
+            <!-- --------------------------------------------VARIATIONS------------------------------------------  -->
+
+            <div class="variation" id="variation">
+                <div class="variationheader">
+                    <h2> Product Options</h2>
+                    <span>Create Product Variations & customizations</span>
+                </div>
+
+                <div class="variationbox" id="variationbox">
+                    <div class="variationhead">
+                        <h2> Variations </h2>
+                    </div>
+
+                    <div class="variationparagraph">
+                        Add images and videos of your product to engage customers.
+                    </div>
+
+
+                    <div class="variantoptions">
+                        <h2> Variant Options</h2> <br> <br>
+                        <p>No option has been added yet</p> <br>
+                        <button>+ Add Variant Option</button>
+                    </div>
+
+                    <div class="variants">
+                        <h2>Variants</h2>
+                        <input type="none" placeholder="variants will be created after adding options">
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+
+
+
+            <!-- ----------------------------------------------DIMENSIONS & WEIGHT------------------------------- -->
+
+            <div class="dimension" id="weight">
+                <div class="dimensionheader">
+                    <h2> Fulfillment</h2>
+                    <span>Setup Shipping and inventory details for the project</span>
+                </div>
+
+                <div class="dimensionbox" id="dimensionbox">
+                    <div class="dimensionhead">
+                        <h2> Dimensions & Weight </h2>
+                    </div>
+
+                    <div class="dimensionparagraph">
+                        Enter the dimension and weight of this product to help calculate shipping rate. This
+                        measurements are for the <br> product's shipping container. They are used to help calculate
+                        shipping
+                        price and do not show up in your doorfront.
+                    </div>
+
+
+                    <div class="dimensioninfo">
+                        <div class="dimensionweight">
+                            <label> Weight</label> <br>
+                            <input type="text" placeholder="Enter">
+                        </div>
+                        <div class="dimensionwidth">
+                            <label> Width(Inches)</label> <br>
+                            <input type="text" placeholder="Enter ">
+                        </div>
+                        <div class="dimensionheight">
+                            <label> Height(Inches)</label> <br>
+                            <input type="text" placeholder="Enter ">
+                        </div>
+                        <div class="dimensiondepth">
+                            <label> Depth(Inches)</label> <br>
+                            <input type="text" placeholder="Enter ">
+                        </div>
+                    </div>
+                    <br><br>
+
+
+
+                </div>
+            </div>
+
+
+
+            <!-- ----------------------------------SHIPPING DETAIL---------------------------------------------->
+            <div class="shippingdetails" id="shippingdetails">
+                <div class="shippingheader">
+                    <h2>Shipping Details</h2>
+                </div>
+
+                <div class="shippinginfo">
+                    <label>Fixed Shipping Price</label> <br>
+                    <input type="text" placeholder="$0">
+                    <div class="freeshipping">
+                        <input type="checkbox"> <span>Free Shipping </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- ----------------------------------------------SEO----------------------------------------------------->
+
+            <div class="seo" id="seo">
+                <div class="seoheader">
+                    <h2> SEO & Sharing</h2>
+                    <span>Boost Traffic To Your Online Business</span>
+                </div>
+
+                <div class="seobox" id="seobox">
+                    <div class="seohead">
+                        <h2> Search Engine Optimization </h2>
+                    </div>
+
+                    <div class="seoinfo">
+                        <div class="seoinfo1">
+                            <div class="seopagetitle">
+                                <label> Page Title</label> <br>
+                                <input type="text" placeholder="Enter">
+                            </div>
+                            <div class="seourl">
+                                <label> Product Url</label> <br>
+                                <input type="text" placeholder="Enter "> <button>Reset</button>
+                            </div>
+                        </div>
+
+                        <div class="seometa">
+                            <label> Meta Description</label> <br>
+                            <input type="text" placeholder="Enter">
+                        </div>
+                        <br> <br>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ---------------------------------------OPEN GRAPH SHARING------------------------------------------  -->
+
+
+            <div class="opengraphsharing" id="ogs">
+                <div class="ogshead">
+                    <h2> Open Graph Sharing </h2>
+                </div>
+
+                <div class="ogsinfo">
+                    <div class="ogstype">
+                        <label>Object Type</label> <br>
+                        <select name="category" id="select">
+                            <option value="catogory1">Product1</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="ogstitle">
+                        <label>Title</label> <br>
+                        <input type="checkbox"> <span>Use Product Name</span>
+                    </div>
+                    <br>
+                    <div class="ogsdescription">
+                        <label>Description</label> <br>
+                        <input type="checkbox"> <span>Use mets Description</span>
+                    </div>
+                    <br>
+                    <div class="ogsimage">
+                        <label>Image</label> <br>
+                        <input type="radio"> <span>Use Thumbnail Image</span> <br>
+                        <input type="radio"> <span>Don't use an Image</span>
+                    </div>
+                    <br>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <br>
+    <div class="footer">
+        <div class="cancel">
+            Cancel
+        </div>
+
+        <div class="save">
+            <button type="submit">Save</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
